@@ -17,7 +17,7 @@ else
 $sql = "CREATE TABLE IF NOT EXISTS user(
         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
         username VARCHAR(30) NOT NULL,
-        password VARCHAR(10) NOT NULL,
+        password VARCHAR(50) NOT NULL,
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP);";
 
     if($conn->query($sql) == true){
